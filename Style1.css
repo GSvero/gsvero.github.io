@@ -16,14 +16,10 @@ div {
   z-index: 999;
 }
 
-
-
 .sec_container {
   width: 94%;
   margin: auto;
 }
-
-
 
 .head-container {
   display: flex;
@@ -51,7 +47,6 @@ div {
   font-weight: 300;
   text-decoration: none;
 }
-
 
 section.content {
   text-align: center;
@@ -150,12 +145,13 @@ input {
 
 select.placeholder {
   color: #c8c8c8 !important;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 option {
   font-weight: normal;
   display: block;
+  color: #152c5b;
   white-space-collapse: collapse;
   text-wrap: nowrap;
   min-height: 1.2em;
@@ -280,7 +276,7 @@ p.icon_ser {
   position: absolute;
   width: 1px;
   height: 185px;
-  background: #C8C8C8;
+  background: #c8c8c8;
   top: -90px;
   right: 0;
 }
@@ -293,6 +289,17 @@ p.icon_ser {
   left: 13rem;
   top: 9px;
   transform: rotate(90deg);
+}
+
+.line_show_left_mob {
+  position: absolute;
+  width: 1px;
+  height: 257px;
+  background: #c8c8c8;
+  left: 13rem;
+  top: 9px;
+  transform: rotate(90deg);
+  display: none;
 }
 
 .list_grid_last {
@@ -419,7 +426,7 @@ section.service_award {
   background-color: #eb6335;
 }
 
-.grid_content:hover {
+.grid_content: {
   opacity: 1;
 }
 
@@ -535,25 +542,118 @@ section.footer-section {
   margin: 0;
 }
 
-
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-
   .line_show {
     display: none;
   }
   .line_show_left {
     display: none;
   }
+  .row_container {
+    width: 95% !important;
+  }
+
+  .footer_arrow {
+    display: none;
+  }
+
+  .field_group input {
+    width: -webkit-fill-available !important;
+    padding: 15px 10px !important;
+    font-size: 18px !important;
+  }  
+
+  .field_group select {
+    width: -webkit-fill-available !important;
+    padding: 15px 10px !important;
+    font-size: 18px !important;
+  }
+  
+  .submit #submit {
+    width: -webkit-fill-available !important;
+    padding: 15px 10px !important;
+    font-size: 18px !important;
+  }
 
 }
 
 @media screen and (max-width: 1023px) {
-section.footer_form {
-    padding: 10% 0 !important;
+  section.footer_form {
+    
+    
+    
+    
+            padding: 10% 0 !important;
+  }
+
+  .submit #submit {
+    padding: 15px 10px !important;
+  }
+
+  .icon_grid {
+    left: 0 !important;
+    width: 100% !important;
+}
+
+.list_grid {
+  width: 50%;
+
+}
+.list_grid_last {
+  width: 50%;
+
+}
+.list_grid_last_down {
+  width: 50%;
+
+}
+.icon_image {
+  margin-bottom: 15px !important;
+  margin-top: 0.5rem;
+}
+
+.icon_image img {
+  width: 59px;
+  height: 59px;
+  object-fit: contain;
+}
+
+p.icon_ser {
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+
+.line_show_left_mob {
+  display: block;
+}
+
+.row_container {
+  width: 95% !important;
+}
+
+.make_container {
+  display: block !important;
+  width: 100%;
+
+}
+
+.make_content {
+  left: 0px !important;
+  width: 100% !important;
+}
+
+h3.make_text {
+  font-size: 25px !important;
+  line-height: 1.5 !important;
+  text-align: center;
+}
+
+.make_form {
+  width: 100% !important;
+}
+
+.make_banner {
+ padding-top: 7%;
 }
 
 }
@@ -561,13 +661,12 @@ section.footer_form {
 
 
 
-@media screen and (min-width: 1661px) and (max-width: 1919px){
-h2.clients {
-  font-size: 50px;
-}
-}
 
-
+@media screen and (min-width: 1661px) and (max-width: 1919px) {
+  h2.clients {
+    font-size: 50px;
+  }
+}
 
 @media screen and (min-width: 1400px) and (max-width: 1799px) {
   .sec_container {
@@ -584,7 +683,7 @@ h2.clients {
     max-width: 306px;
   }
 
-  .contact {
+  .contact a {
     padding: 9px 12px;
     font-size: 20px;
     position: absolute;
@@ -607,9 +706,70 @@ h2.clients {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1290px) {
+@media screen and (min-width: 1024px) and (max-width: 1290px) {
+  .icon_image img {
+    width: 70px !important;
+    height: 70px !important;
+  }
 
-   .sec_container {
+  p.icon_ser {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .service_consultation a {
+    padding: 15px 25px !important;
+    font-size: 20px !important;
+  }
+  .list_grid {
+    width: 25% !important;
+  }
+
+  .list_grid_last_down {
+    width: 25% !important;
+  }
+
+  .list_grid_last {
+    width: 25% !important;
+  }
+
+  .icon_grid {
+    width: 94% !important;
+  }
+
+  .make_container {
+    display: flex !important;
+    width: 87% !important;
+  }
+
+  h3.make_text {
+    font-size: 24px !important;
+    line-height: 35px !important;
+  }
+
+  .make_form {
+    width: 50% !important;
+  }
+
+  .make_content {
+    left: 0 !important;
+    width: 65%;
+  }
+
+  .make_banner {
+    padding-left: 29px !important;
+    padding-top: 0 !important;
+  }
+
+  .field_group input {
+    text-align: inherit;
+    width: 128%;
+    padding: 18px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1290px) {
+  .sec_container {
     width: 94%;
   }
 
@@ -621,7 +781,6 @@ h2.clients {
     width: 65%;
     max-width: 306px;
   }
-
 
   .head {
     width: 95%;
@@ -650,14 +809,10 @@ h2.clients {
     font-size: 18px;
     padding: 18px 19px;
   }
-  
+
   .form-input select {
     font-size: 18px;
     padding: 18px 19px;
-  }
-
-  .submit #submit {
-    padding: 15px 10px;
   }
 
   p.service_para {
@@ -668,82 +823,121 @@ h2.clients {
 
   .icon_grid {
     left: 0;
-    width: 100%;    
+    width: 100%;
   }
   .list_grid {
-    width: 50% 
+    width: 50%;
   }
 
   .list_grid_last {
-    width: 50% 
+    width: 50%;
   }
 
   .list_grid_last_down {
-    width: 50% 
+    width: 50%;
   }
 
   .icon_image {
     margin-bottom: 15px;
     margin-top: 0.5rem;
-}
+  }
 
-.icon_image img {
-  width: 59px;
-  height: 59px;
-  object-fit: contain;
-}
+  .icon_image img {
+    width: 59px;
+    height: 59px;
+    object-fit: contain;
+  }
 
-p.icon_ser {
-  font-size: 16px;
-  line-height: 26px;
-}
+  p.icon_ser {
+    font-size: 16px;
+    line-height: 26px;
+  }
 
-.row_container {
-  width: 100%;  
-}
+  .row_container {
+    width: 100%;
+  }
 
-.small_content_award p {
-  font-size: 16px;
-}
+  .small_content_award p {
+    font-size: 16px;
+  }
 
   .grid_list {
     width: 29%;
     padding: 11px;
   }
 
-
-.client {
+  .client {
     width: 95%;
-}
-
-.make_container {
-  display: block;
-  width: 100%;  
-}
-
-.make_content {
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-h3.make_text {
-  font-size: 25px !important;
-  line-height: 1.5 !important;
   }
 
+  .make_container {
+    display: block;
+    width: 100%;
+  }
 
+  h3.make_text {
+    font-size: 25px !important;
+    line-height: 1.5 !important;
+    text-align: center;
+  }
+
+  .make_form {
+    width: 100% !important;
+  }
+
+  .make_content {
+    left: 0 !important;
+    width: 100%;
+  }
+
+  .field_group input {
+    text-align: inherit;
+    width: fill available;
+    padding: 15px 10px;
+    font-size: 18px;
+  }
+
+  .field_group select {
+    text-align: inherit;
+    font-size: 18px;
+    width: fill available;
+    padding: 15px 10px;
+  }
+
+  .make_banner {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 6%;
+    clear: both;
+  }
+
+  .submit #submit {
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+
+  .footer_arrow img {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .contact {
-    position: absolute;
-    right: 23px;
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .contact a {
+    font-size: 17px;
+    padding: 6px 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .form-sec {
+    margin-top: 0px;
+  }
+
   .header {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     padding: 4% 0;
   }
 
@@ -760,10 +954,8 @@ h3.make_text {
     max-width: 65%;
   }
 
-  .contact {
+  .contact a {
     font-size: 17px;
-    position: absolute;
-    right: 12px;
     padding: 6px 16px;
   }
 
@@ -777,8 +969,27 @@ h3.make_text {
     margin: auto;
   }
 
+  section.service {
+    padding: 15% 0;
+  }
+
+  .client {
+    width: 95% !important;
+  }
+
   h2.clients {
     font-size: 24px;
+  }
+
+  h2#service_client {
+    font-size: 24px;
+    margin-bottom: 21px !important;
+  }
+
+  p.service_para {
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 3rem;
   }
 
   .smallcontent {
@@ -790,20 +1001,151 @@ h3.make_text {
     margin: 0;
   }
 
-  .form-container {
-    margin-top: 0px;
+  .container {
+    display: block !important;
   }
-
   .form-image-container {
     width: 100%;
   }
 
   .form-image-container {
     position: relative;
-    top: 8px;
   }
+
+  .form-elements {
+    width: 100%;
+    padding-top: 3%;
+  }
+
+  .form-input input {
+    font-size: 18px;
+  }
+
+  .form-input select {
+    font-size: 18px;
+  }
+
+  form.banner {
+    width: 95%;
+    padding-left: 0;
+    margin: auto;
+  }
+
+  .line_show {
+    width: 1px !important;
+    height: 140px !important;
+    right: 6% !important;
+    left: revert !important;
+    top: -100px !important;
 }
 
+.line_show_left {
+  top: 35px !important;
+  height: 120px !important;
+  left: 85px !important;
+}
 
+.list_grid:nth-child(even) .line_show {
+  display: none !important;
+}
 
+.list_grid {
+  text-align: left !important;
+  margin-top: 1rem !important;
+}
+.list_grid_last {
+  text-align: left !important;
+  margin-top: 1rem !important;
+}
+.list_grid_last_down {
+  text-align: left !important;
+  margin-top: 1rem !important;
+}
 
+.line_show_left_mob {
+    top: 35px !important;
+    height: 120px !important;
+    left: 85px !important;
+}
+
+.line_show.nob {
+  display: none !important;
+}
+
+.service_consultation a {
+  font-size: 15px;
+  padding: 18px 24px !important;
+}
+
+.small_content_award p {
+  font-size: 15px;
+}
+
+.row_container {
+  width: 95% !important;
+}
+
+.grid_content {
+  width: 95% !important;
+}
+
+.grid_list {
+  width: 50% !important;
+}
+
+.award_grid {
+  padding-left: 0%;
+  width: 98%;
+}
+
+.grid_icon {
+ width: 100%;
+}
+
+.grid_icon img {
+  width: 92%;
+}
+
+h3.make_text {
+  font-size: 16px !important;
+  margin-bottom: 5%;
+}
+
+.footer_arrow {
+  display: none;
+}
+
+.make_banner {
+  width: 95% !important;
+  padding-left: 0 !important;
+  margin: auto !important;
+ }
+
+ .field_group input {
+  width: -webkit-fill-available !important;
+  padding: 15px 10px !important;
+  font-size: 18px !important;
+}
+
+.field_group select {
+  width: -webkit-fill-available !important;
+  padding: 15px 10px !important;
+  font-size: 18px !important;
+}
+
+.submit #submit {
+  width: -webkit-fill-available !important;
+  padding: 15px 10px !important;
+  font-size: 18px !important;
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+.icon_image {
+    padding-left: 2rem;
+    padding-top: 23px;
+}
+
+.icon_content {
+  padding-left: 2rem;
+}
+}
