@@ -579,11 +579,7 @@ section.footer-section {
 
 @media screen and (max-width: 1023px) {
   section.footer_form {
-    
-    
-    
-    
-            padding: 10% 0 !important;
+    padding: 10% 0 !important;
   }
 
   .submit #submit {
