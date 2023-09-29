@@ -434,7 +434,7 @@ section.service_award {
   background-color: #eb6335;
 }
 
-.grid_content: {
+.grid_content:hover {
   opacity: 1;
 }
 
