@@ -955,45 +955,7 @@ section.footer-section {
     max-width: 65%;
   }
 
-  .contact a {
-    font-size: 17px;
-    padding: 6px 16px;
-  }
 
-  section.content {
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .head {
-    width: 95%;
-    margin: auto;
-  }
-
-  section.service {
-    padding: 15% 0;
-  }
-
-  .client {
-    width: 95% !important;
-  }
-
-  h2.clients {
-    font-size: 24px;
-  }
-
-  h2#service_client {
-    font-size: 24px;
-    margin-bottom: 21px !important;
-  }
-
-  p.service_para {
-    font-size: 18px;
-    width: 100%;
-    padding-bottom: 3rem;
-  }
-
-  .smallcontent {
     width: 84%;
   }
 
